@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Homepage</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .hero {
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('hero-bg.jpg');
+            background-size: cover;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+        }
+        #product-catalog {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product {
+            background: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 5px;
+            width: 200px;
+            margin: 10px;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .filter {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>E-Commerce</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to Our Store!</h1>
+</section>
+
+<section class="filter">
+    <h2>Filter Products</h2>
+    <label for="category">Category:</label>
+    <select id="category">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="accessories">Accessories</option>
+    </select>
+</section>
+
+<section id="product-catalog">
+    <div class="product">
+        <h3>Product 1</h3>
+        <p>Description of product 1.</p>
+        <p>Price: $10.00</p>
+    </div>
+    <div class="product">
+        <h3>Product 2</h3>
+        <p>Description of product 2.</p>
+        <p>Price: $20.00</p>
+    </div>
+    <div class="product">
+        <h3>Product 3</h3>
+        <p>Description of product 3.</p>
+        <p>Price: $30.00</p>
+    </div>
+    <div class="product">
+        <h3>Product 4</h3>
+        <p>Description of product 4.</p>
+        <p>Price: $40.00</p>
+    </div>
+    <div class="product">
+        <h3>Product 5</h3>
+        <p>Description of product 5.</p>
+        <p>Price: $50.00</p>
+    </div>
+</section>
+
+</body>
+</html>
